@@ -1,0 +1,236 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+    link(rel='stylesheet' href='../static/style.css')
+  body
+    // Navigation Bar section starts
+    header.header
+      a.logo(href='#')
+        img(src='../static/img/logoimg1.jpg' alt='')
+      nav.navbar
+        a(href='#home') Home
+        a(href='#about') About
+        a(href='#menu') Our Shop
+        a(href='#products') Herbs Tea
+        a(href='#blogs') Blogs
+      .icon
+        #search-btn.fas.fa-search
+        a(href='/signup') Sign Up
+        #cart-btn.fas.fa-shopping-cart
+      .search-form
+        input#search-box(type='search' name='' placeholder='search here....')
+        label.fas.fa-search(for='search-box')
+    // Navigation Bar section ends
+    // home section start
+    section#home.home
+      .content
+        h3 fresh coffee in the morning
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, sit illo. Mollitia esse aspernatur id
+          | velit quidem eaque provident officiis distinctio eum temporibus, iusto nesciunt magni adipisci
+          | asperiores explicabo neque.
+        a.btn(href='#') Shop Now >>
+    // home section ends
+    // about section starts
+    section#about.about
+      h1.heading
+        span about
+        | us
+      .row
+        .image
+          img(src='../static/img/aboutimg.jpeg' alt='')
+        .content
+          h3 what make your coffee special?
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident soluta velit in corrupti, vero,
+            | quo suscipit impedit voluptatem mollitia cupiditate, asperiores ipsam. Perferendis distinctio
+            | temporibus doloribus voluptatem deleniti quod fugit
+          p
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe dolorem earum ducimus atque animi
+            | architecto, molestias magni commodi amet eum illo voluptas fugiat maxime ex ipsa tempora beatae
+            | perspiciatis reprehenderit.
+          a.btn(href='#') learn more
+    // about section ends
+    // product section starts
+    section#menu.menu
+      h1.heading our 
+        span shop
+      .box-container
+        .box
+          img(src='../static/img/product1.jpg' alt='')
+          h3 Jambool Beej Powder
+          .price Rs.589/- 
+            span 450
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product2.jpg' alt='')
+          h3 Natural Mehandi Powder
+          .price Rs.250/- 
+            span 200
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product3.jpg' alt='')
+          h3 Fresh Beetroot Powder
+          .price Rs.350/- 
+            span 345
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product4.jpg' alt='')
+          h3 Pomogranet Peel Powder
+          .price Rs.580/- 
+            span 499
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product5.jpg' alt='')
+          h3 Indian Amala Powder
+          .price Rs.399/- 
+            span 349
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product6.jpg' alt='')
+          h3 Orange Peel Powder
+          .price Rs.250/- 
+            span 200
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product7.jpg' alt='')
+          h3 Desi Papaya Powder
+          .price Rs.450/- 
+            span 399
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product8.jpg' alt='')
+          h3 Desi Rose Petals Powder
+          .price Rs.369/-
+          a.btn(href='#') add to cart
+        .box
+          img(src='../static/img/product9.png' alt='')
+          h3 Carrot Powder
+          .price Rs.367/- 
+            span 350
+          a.btn(href='#') add to cart
+    // products section ends
+    // Herbs Tea section start
+    section#products.products
+      h1.heading Herbs 
+        span  Tea
+      .box-container
+        .box
+          .image
+            img(src='../static/img/Hearbstea1 (1).jpg' alt='')
+          .content
+            h3 Bael Fruit Tea 
+            .stars
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star-half-alt
+          .price Rs.459/- 
+            span Rs.568/-
+          .icons
+            a.fas.fa-shopping-cart(href='#')
+            a.fas.fa-heart(href='#')
+            a.fas.fa-eye(href='#')
+        .box
+          .image
+            img(src='../static/img/Hearbstea1 (3).jpg' alt='')
+          .content
+            h3 Butterfly Pea Or Blue Pea Flower Herbal Tea
+            .stars
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star-half-alt
+          .price Rs.459/- 
+            span Rs.568/-
+          .icons
+            a.fas.fa-shopping-cart(href='#')
+            a.fas.fa-heart(href='#')
+            a.fas.fa-eye(href='#')
+        .box
+          .image
+            img(src='../static/img/Hearbstea1 (2).jpg' alt='')
+          .content
+            h3 Tulasi Tea
+            .stars
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star
+              i.fas.fa-star-half-alt
+          .price Rs.459/- 
+            span Rs.568/-
+          .icons
+            a.fas.fa-shopping-cart(href='#')
+            a.fas.fa-heart(href='#')
+            a.fas.fa-eye(href='#')
+    // Herbs Tea section ends
+    // blogs section starts
+    section#blogs.blogs
+      h1.heading our 
+        span blogs
+      .box-container
+        .box
+          .image
+            img(src='../static/img/Banana-Face-Mask-Recipe.png' alt='')
+          .content
+            a.title(href='#') Banana Face Mask Recipe
+            span by admin/10th may,2021
+            p
+              | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dolorum corporis sapiente
+              | ducimus fugit minus culpa iste omnis. Consequuntur dolores possimus quas sunt aut vero
+              | perferendis consectetur aspernatur mollitia ut?
+            a.btn(href='#') read more...
+        .box
+          .image
+            img(src='../static/img/Bael_juice_898.jpg' alt='')
+          .content
+            a.title(href='#') Beal tea benefites for skin
+            span by admin/10th may,2021
+            p
+              | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dolorum corporis sapiente
+              | ducimus fugit minus culpa iste omnis. Consequuntur dolores possimus quas sunt aut vero
+              | perferendis consectetur aspernatur mollitia ut?
+            a.btn(href='#') read more...
+        .box
+          .image
+            img(src='../static/img/Acne-Fighting-Pomegranate-Treatment.jpg' alt='')
+          .content
+            a.title(href='#') Acne Fighting Pomegranate Treatment
+            span by admin/10th may,2021
+            p
+              | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dolorum corporis sapiente
+              | ducimus fugit minus culpa iste omnis. Consequuntur dolores possimus quas sunt aut vero
+              | perferendis consectetur aspernatur mollitia ut?
+            a.btn(href='#') read more...
+    // blogs secction ends
+    // footer section starts
+    section.footer
+      .share
+        a.fab.fa-facebook-f(href='#')
+        a.fab.fa-twitter(href='#')
+        a.fab.fa-instagram(href='#')
+        a.fab.fa-linkedin(href='#')
+        a.fab.fa-pinterest(href='#')
+      .links
+        a(href='#') home
+        a(href='#') about
+        a(href='#') menu
+        a(href='#') products
+        a(href='#') review
+        a(href='#') contact
+        a(href='#') blogs
+      .credit creted by 
+        span adminuser@gmail.com
+        | | all right reserved
+    // footer section ends
+    // custom js file link
+    script(src='../static/index.js').
+      

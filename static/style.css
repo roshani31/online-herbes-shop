@@ -1,0 +1,279 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root{
+    
+    --bg:white;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+body{
+    background: var(--bg);
+}
+section{
+    padding: 2rem 7%;
+    
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 15px;
+    margin-right: 40px;
+
+}
+#logo img{
+    height: 45px;
+}
+
+#navbar{
+    background:black;
+    padding: 13px 14px;
+    
+
+}
+#navbar ul{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+#navbar li{
+list-style: none;
+}
+
+#navbar li a{
+text-decoration: none;
+padding: 13px 30px;
+color: rgb(202, 144, 18);
+font-size: 1.6rem;
+}
+
+#navbar li a:hover{
+  color: rgb(255, 255, 255);
+  
+}
+.heading{
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+font-size: 4rem;
+}
+.heading span{
+    color:rgb(202, 144, 18);
+    text-transform: uppercase;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../static/img/homeimg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+    margin-left: 10rem;
+}
+.home .content h3{
+    color:black;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1 rem 0;
+    color:black;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background:rgb(202, 144, 18);
+    cursor: pointer;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--bg);
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex:1 1 45rem
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.about .row .content p{
+   font-size: 1.6rem;
+   color:black;
+   padding: 1rem 0;
+   line-height: 1.8;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: var(--border);
+}
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+
+}
+.menu .box-container .box img{
+    height: 10rem;
+}
+.menu .box-container .box h3{
+    color:black;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color:black;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu .box-container .box:hover{
+ background:rgb(235, 201, 127);
+}
+.menu .box-container .box:hover > *{
+    color: var(--bg);
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color:rgb(202, 144, 18);
+    margin: .3rem;
+}
+.products .box-container .box .icons a:hover{
+    background: rgb(235, 201, 127);
+}
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+.products .box-container .box .image img{
+    height: 25rem;
+}
+.products .box-container .box .content h3{
+    color: black;
+    font-size: 2.5rem;
+}
+.products .box-container .box .content .stars{
+ padding: 1.5rem;
+}
+.products .box-container .box .content .stars i{
+   font-size: 1.7rem;
+   color: rgb(202, 144, 18);
+}
+.products .box-container .box .price{
+    color: black;
+    font-size: 2rem;
+}
+.products .box-container .box .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;   
+}
+.blogs .box-container .box{
+    border: var(--border);
+}
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.blogs .box-container .box:hover .image img{
+transform: scale(1.2);
+}
+.blogs .box-container .box .content{
+
+    padding: 2rem;
+}
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: black;
+}
+.blogs .box-container .box .content .title:hover{
+    color: rgb(202, 144, 18);
+}
+.blogs .box-container .box .content span{
+    color: rgb(202, 144, 18);
+    display: block;
+    padding-top:1rem;
+    font-size: 2rem;
+}
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: black;
+    padding: 1.8rem 0;
+}
+#footer{
+    background: black;
+    text-align: center;
+    color: rgb(202, 144, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 2rem;
+    }
